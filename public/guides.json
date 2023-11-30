@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "profile_picture": "https://i.ibb.co/7XkfmnH/cropped-dmitry-vechorko-E9-PFbdh-Zmus-unsplash-removebg-preview.png",
+      "contact_email": "alice@example.com",
+      "contact_phone": "+1234567890",
+      "contact_address": "123 Tour Street, City, Country",
+      "education": "Bachelor's Degree in Tourism Management",
+      "skill1": "Multilingual (English, Spanish, French)",
+      "skill2": "Guided tours",
+      "skill3": "Customer service",
+      "work_experience": "5 years as a tour guide in various historical sites and landmarks.",
+      "details": "Passionate about showcasing local culture and history through engaging tours."
+    },
+    {
+      "id": 2,
+      "name": "David Smith",
+      "profile_picture": "https://i.ibb.co/xz8yvt3/cropped-nith-in-w1-N1-Wm-LDy-HU-unsplash-removebg-preview.png",
+      "contact_email": "david@example.com",
+      "contact_phone": "+1987654321",
+      "contact_address": "456 Sightseeing Avenue, City, Country",
+      "education": "Certification in Tour Guiding",
+      "skill1": "Knowledgeable in local history",
+      "skill2": "Expertise in nature tours",
+      "skill3": "First aid certified",
+      "work_experience": "Worked as a tour guide for 8 years across national parks and cultural sites.",
+      "details": "Enthusiastic about connecting people with the beauty of nature and heritage."
+    },
+    {
+      "id": 3,
+      "name": "Sophie Miller",
+      "profile_picture": "https://i.ibb.co/MNMqw0V/cropped-aiony-haust-3-TLl-97-HNJo-unsplash-removebg-preview.png",
+      "contact_email": "sophie@example.com",
+      "contact_phone": "+1122334455",
+      "contact_address": "789 Adventure Lane, City, Country",
+      "education": "Master's Degree in History and Tourism",
+      "skill1": "Specialized in historical tours",
+      "skill2": "Excellent communication skills",
+      "skill3": "Event organization",
+      "work_experience": "10 years of experience guiding historical tours in renowned landmarks.",
+      "details": "Dedicated to making history come alive through engaging storytelling."
+    },
+    {
+      "id": 4,
+      "name": "Michael Brown",
+      "profile_picture": "https://i.ibb.co/bWCcrmN/cropped-janko-ferlic-G-jo31-ESu-RE-unsplash-removebg-preview.png",
+      "contact_email": "michael@example.com",
+      "contact_phone": "+3344556677",
+      "contact_address": "101 Heritage Place, City, Country",
+      "education": "Tourism and Hospitality Management Diploma",
+      "skill1": "Expertise in cultural immersion tours",
+      "skill2": "Proficient in local cuisines",
+      "skill3": "Event management",
+      "work_experience": "6 years as a tour guide specializing in cultural immersion experiences.",
+      "details": "Passionate about showcasing the local way of life and traditions to visitors."
+    },
+    {
+      "id": 5,
+      "name": "Emily Wilson",
+      "profile_picture": "https://i.ibb.co/kXXcm6s/cropped-roman-holoschchuk-Zn-Hp-Oh-Hnk-DY-unsplash-removebg-preview.png",
+      "contact_email": "emily@example.com",
+      "contact_phone": "+9988776655",
+      "contact_address": "555 Culture Road, City, Country",
+      "education": "Bachelor's Degree in Cultural Anthropology",
+      "skill1": "Cross-cultural communication",
+      "skill2": "Customized tour planning",
+      "skill3": "Knowledgeable in art history",
+      "work_experience": "4 years of experience leading personalized cultural tours.",
+      "details": "Committed to creating tailored experiences that resonate with each visitor's interests."
+    }
+  ]
+  

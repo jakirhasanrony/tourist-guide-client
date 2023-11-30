@@ -1,0 +1,177 @@
+[
+    {
+        "trip_title": "Heritage Expedition: Exploring Ancient Civilizations",
+        "tour_type": "Cultural Tours",
+        "price": "$1500",
+        "image": "https://i.ibb.co/J3pNdq2/cropped-beautiful-shot-famous-roman-colosseum-amphitheater-breathtaking-sky-sunrise-removebg-preview.png",
+        "details": "Embark on a captivating journey delving into ancient civilizations. Visit archaeological wonders, immerse in local traditions, and witness historical sites that resonate the rich heritage of diverse cultures."
+    },
+    {
+        "trip_title": "Cultural Mosaic Discovery: Immersive Traditions Tour",
+        "tour_type": "Cultural Tours",
+        "price": "$1700",
+        "image": "https://i.ibb.co/z5RRK5s/cropped-roman-mosaics-2.jpg",
+        "details": "Experience a mosaic of cultures through immersive traditions. Engage with locals, witness traditional festivals, and explore hidden cultural gems on this enriching journey."
+    },
+    {
+        "trip_title": "Art & History Odyssey: Unveiling Cultural Legacies",
+        "tour_type": "Cultural Tours",
+        "price": "$1600",
+        "image": "https://i.ibb.co/vqZ3Rth/cropped-greek-busts-temple-23-2150719224.jpg",
+        "details": "Unveil the artistic and historical legacies of civilizations. Delve into art galleries, explore ancient monuments, and immerse in the stories behind cultural masterpieces."
+    },
+    {
+        "trip_title": "Local Life Escapade: Living Culture Experience",
+        "tour_type": "Cultural Tours",
+        "price": "$1400",
+        "image": "https://i.ibb.co/8jvJFRM/cropped-people-celebrating-new-year-s-eve-their-traditional-culture-23-2150901908.jpg",
+        "details": "Immerse in the local way of life and experience living cultures. Engage with communities, participate in daily activities, and gain insights into authentic lifestyles."
+    },
+    {
+        "trip_title": "Festival Frenzy Journey: Celebrate Diversity Tour",
+        "tour_type": "Cultural Tours",
+        "price": "$1800",
+        "image": "https://i.ibb.co/mS9STMw/cropped-old-people-enjoying-party-yard-their-country-house-1142-39031.jpg",
+        "details": "Immerse yourself in the vibrant celebrations of diverse festivals. Join locals in cultural festivities, witness traditional dances, and embrace the joyous atmosphere."
+    },
+    {
+        "trip_title": "Peak Pursuit Quest: High Altitude Adventure",
+        "tour_type": "Adventure Tours",
+        "price": "$2000",
+        "image": "https://i.ibb.co/tB89zg4/cropped-top-mountain-view-23-2150528655.jpg",
+        "details": "Experience the thrill of high-altitude adventures! Hike through breathtaking peaks, conquer challenging terrains, and feel the rush of adrenaline as you explore the world from great heights."
+    },
+    {
+        "trip_title": "Jungle Trek Thrill: Wild Wilderness Expedition",
+        "tour_type": "Adventure Tours",
+        "price": "$2200",
+        "image": "https://i.ibb.co/c26HR1P/cropped-trekking-forest-53876-28.jpg",
+        "details": "Embark on a thrilling trek through untamed jungles. Encounter exotic wildlife, navigate through dense forests, and witness the raw beauty of unexplored terrains."
+    },
+    {
+        "trip_title": "Riverside Rush Adventure: Whitewater Rafting Escape",
+        "tour_type": "Adventure Tours",
+        "price": "$1800",
+        "image": "https://i.ibb.co/GkQ4MS1/cropped-happy-friends-kayaking-river-with-sunset-background-155003-44413.jpg",
+        "details": "Feel the rush as you navigate thrilling rapids! Enjoy the adrenaline-pumping adventure of whitewater rafting, surrounded by stunning riverside landscapes."
+    },
+    {
+        "trip_title": "Extreme Explorer's Circuit: Off-the-Grid Adventure",
+        "tour_type": "Adventure Tours",
+        "price": "$2500",
+        "image": "https://i.ibb.co/cw8y9xT/cropped-full-shot-people-with-laptop-coffee-cup-23-2148922122.jpg",
+        "details": "Embark on an extreme off-the-grid adventure! Conquer extreme terrains, camp in remote areas, and push your limits in this adrenaline-fueled expedition."
+    },
+    {
+        "trip_title": "Summit Seeker's Expedition: Mountain Range Quest",
+        "tour_type": "Adventure Tours",
+        "price": "$2400",
+        "image": "https://i.ibb.co/rwmnMw9/cropped-male-hiker-with-backpack-taking-picture-rocky-mountains-covered-snow-181624-11714.jpg",
+        "details": "Conquer the peaks and seek the summit! Trek through majestic mountain ranges, explore alpine landscapes, and experience the awe-inspiring beauty from the top."
+    },
+    {
+        "trip_title": "Safari Serenity Sojourn: African Wildlife Adventure",
+        "tour_type": "Wildlife Tours",
+        "price": "$2500",
+        "image": "https://i.ibb.co/9bSs3C5/cropped-field-covered-grass-trees-surrounded-by-zebras-sunlight-during-sunset-181624-18641.jpg",
+        "details": "Embark on an unforgettable safari adventure through the heart of Africa. Witness the majestic beauty of wildlife, from elephants to lions, in their natural habitats while enjoying the serene landscapes."
+    },
+    {
+        "trip_title": "Birdwatcher's Haven Hideout: Avian Paradise Retreat",
+        "tour_type": "Wildlife Tours",
+        "price": "$1900",
+        "image": "https://i.ibb.co/SN2zFLQ/cropped-view-wild-bird-23-2150793395.jpg",
+        "details": "Indulge in a birdwatcher's paradise! Explore diverse habitats, spot rare species, and immerse in the melodious world of avian wonders."
+    },
+    {
+        "trip_title": "Into the Wild Expedition: Nature's Magnificent Creatures",
+        "tour_type": "Wildlife Tours",
+        "price": "$2100",
+        "image": "https://i.ibb.co/mN12rKk/cropped-view-wild-elk-nature-23-2150829525.jpg",
+        "details": "Embark on a thrilling journey into the wild! Witness untamed creatures in their natural habitat, from prowling predators to elusive species, in their raw and beautiful environments."
+    },
+    {
+        "trip_title": "Jungle Explorer's Safari: Rainforest Wildlife Encounter",
+        "tour_type": "Wildlife Tours",
+        "price": "$2200",
+        "image": "https://i.ibb.co/hBtS8TP/cropped-men-women-hiking-through-foggy-forest-generated-by-ai-24640-81061.jpg",
+        "details": "Immerse in the wonders of the rainforest! Encounter diverse wildlife, from colorful birds to rare mammals, amidst lush greenery and breathtaking landscapes."
+    },
+    {
+        "trip_title": "Savannah Sunset Safari: Big Five Discovery Tour",
+        "tour_type": "Wildlife Tours",
+        "price": "$2600",
+        "image": "https://i.ibb.co/cwr7NQt/cropped-3d-render-wild-animals-sunset-landscape-1048-6116.jpg",
+        "details": "Witness the grandeur of the Big Five on a sunset safari! Track iconic wildlife, from majestic lions to massive elephants, against the backdrop of the African savannah."
+    },
+    {
+        "trip_title": "Flavors of the World Gastronomy Tour: Global Cuisine Experience",
+        "tour_type": "Culinary Tours",
+        "price": "$1800",
+        "image": "https://i.ibb.co/6BqPxCr/cropped-group-friends-eating-restaurant-23-2148006650.jpg",
+        "details": "Indulge in a culinary journey around the globe! Taste diverse flavors, learn authentic recipes, and explore local markets to savor the essence of various cultures through their cuisine."
+    },
+    {
+        "trip_title": "Taste of Tradition Culinary Journey: Local Delicacies Exploration",
+        "tour_type": "Culinary Tours",
+        "price": "$1600",
+        "image": "https://i.ibb.co/KW79c0v/cropped-healthy-meal-rustic-table-with-variety-generated-by-ai-188544-41144.jpg",
+        "details": "Savor the essence of local traditions through delightful cuisines! Dive into traditional recipes, visit local food markets, and relish the authentic flavors of the region."
+    },
+    {
+        "trip_title": "Epicurean Escape Adventure: Gourmet Dining Excursion",
+        "tour_type": "Culinary Tours",
+        "price": "$2000",
+        "image": "https://i.ibb.co/SrVKxxn/cropped-young-couple-enjoying-romantic-rooftop-dinner-generated-by-ai-188544-31093-1.png",
+        "details": "Embark on a luxurious gourmet adventure! Indulge in fine dining experiences, explore haute cuisine, and elevate your taste buds with exquisite gastronomic delights."
+    },
+    {
+        "trip_title": "Cooking Class Getaway: Hands-on Culinary Workshop",
+        "tour_type": "Culinary Tours",
+        "price": "$1500",
+        "image": "https://i.ibb.co/7rv58HT/cropped-lifestyle-people-learning-make-sushi-23-2149865295.jpg",
+        "details": "Get hands-on and learn from the experts! Join cooking workshops, master local recipes, and bring home the culinary secrets of the region."
+    },
+    {
+        "trip_title": "Market to Table Expedition: Farm-to-Fork Culinary Adventure",
+        "tour_type": "Culinary Tours",
+        "price": "$1700",
+        "image": "https://i.ibb.co/1TbqZHh/cropped-lifestyle-ecofriendly-people-23-2149125222.jpg",
+        "details": "Experience the journey of food from the source to the table! Explore local farms, gather fresh produce, and cook delightful meals from farm-to-fork."
+    },
+    {
+        "trip_title": "Cityscape Discovery Walk: Urban Marvels Tour",
+        "tour_type": "Sightseeing Tours",
+        "price": "$1200",
+        "image": "https://i.ibb.co/89jwGyz/cropped-travel-hitchhiking-adventure-concept-group-young-hikers-standing-road-sidelines-beautiful-au.jpg",
+        "details": "Explore iconic landmarks and hidden treasures within vibrant cities. Stroll through bustling streets, witness architectural wonders, and discover the captivating history behind each urban marvel."
+    },
+    {
+        "trip_title": "Landmarks & Legends Expedition: Historical Sites Exploration",
+        "tour_type": "Sightseeing Tours",
+        "price": "$1300",
+        "image": "https://i.ibb.co/nnPNqVg/cropped-flat-lay-hand-holding-magnifying-glass-23-2149617673.jpg",
+        "details": "Uncover the stories behind legendary landmarks! Visit historical sites, ancient ruins, and iconic monuments, and delve into the tales of their significance."
+    },
+    {
+        "trip_title": "Panoramic Vistas Quest: Scenic Landscape Adventure",
+        "tour_type": "Sightseeing Tours",
+        "price": "$1100",
+        "image": "https://i.ibb.co/Mpbp69y/cropped-3d-render-yacht-still-blue-water-against-tree-hill-landscape-1048-6214.jpg",
+        "details": "Immerse yourself in breathtaking panoramas! Traverse scenic routes, witness stunning landscapes, and capture picturesque vistas on this awe-inspiring adventure."
+    },
+    {
+        "trip_title": "Architectural Wonders Sojourn: Masterpiece Discovery",
+        "tour_type": "Sightseeing Tours",
+        "price": "$1400",
+        "image": "https://i.ibb.co/ZNb1XjH/cropped-ancient-hindu-temple-bali-majestic-spiritual-travel-destination-generated-by-artificial-inte.jpg",
+        "details": "Discover architectural marvels from different eras! Marvel at stunning designs, visit iconic buildings, and explore the craftsmanship behind historical masterpieces."
+    },
+    {
+        "trip_title": "Scenic Route Escape: Natural Beauty Exploration",
+        "tour_type": "Sightseeing Tours",
+        "price": "$1250",
+        "image": "https://i.ibb.co/gM0sZ5k/cropped-woman-standing-phu-lang-ka-phayao-thailand-335224-807.jpg",
+        "details": "Escape into the lap of nature's beauty! Traverse scenic routes, explore tranquil landscapes, and witness the serene beauty of natural wonders on this journey."
+    }
+]
