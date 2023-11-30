@@ -4,6 +4,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
 import Swal from "sweetalert2";
+import axios from "axios";
 
 const SinglePackageCard = ({ singlePackage }) => {
     const { user } = useAuth();
@@ -15,6 +16,29 @@ const SinglePackageCard = ({ singlePackage }) => {
     const handleAddToWishList = wishPackage => {
         if (user && user.email) {
             // sent wishlist item to database
+            console.log(user.email, wishPackage);
+            const wishListItem = {
+                wishId: _id,
+                email: user.email,
+                trip_title,
+                image,
+                tour_type,
+                price,
+
+            }
+            axios.post('http://localhost:5000/wishlist', wishListItem)
+                .then(res => {
+                    console.log(res.data)
+                    if (res.data.insertedId) {
+                        Swal.fire({
+                            position: "center",
+                            icon: "success",
+                            title: `${trip_title} added to your wishlist`,
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                    }
+                })
         }
         else {
             Swal.fire({
