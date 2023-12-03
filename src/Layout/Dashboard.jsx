@@ -2,10 +2,12 @@ import { FaAd, FaBook, FaHome, FaList, FaTable, FaUser, FaUsers } from "react-ic
 import { NavLink, Outlet } from "react-router-dom";
 import useWishList from "../Hooks/useWishList";
 import useAdmin from "../Hooks/useAdmin";
+import useTourGuide from "../Hooks/useTourGuide";
 
 const Dashboard = () => {
     const [wishListItem] = useWishList();
     const [isAdmin] = useAdmin();
+    const [isTourGuide] = useTourGuide();
     return (
         <div className="flex">
             <div className="w-64 min-h-screen bg-blue-300">
@@ -32,31 +34,46 @@ const Dashboard = () => {
                                 </NavLink>
                             </li>
 
-
-
-                        </>
-                            :
-                            <>
-
+                        </> :
+                            isTourGuide ? <>
                                 <li>
-                                    <NavLink to="/dashboard/myProfile">
+                                    <NavLink to="/dashboard/adminProfile">
                                         <FaUser></FaUser>
-                                        My Profile
+                                        Tour Guide Profile
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/dashboard/myBookings">
-                                        <FaBook></FaBook>
-                                        My Bookings
+                                    <NavLink to="/dashboard/addPackages">
+                                        <FaAd></FaAd>
+                                        My Assigned Tours
+
                                     </NavLink>
                                 </li>
-                                <li>
-                                    <NavLink to="/dashboard/myWishList">
-                                        <FaList></FaList>
-                                        My Wishlist: ({wishListItem.length})
-                                    </NavLink>
-                                </li>
+
+
                             </>
+                                :
+                                <>
+
+                                    <li>
+                                        <NavLink to="/dashboard/myProfile">
+                                            <FaUser></FaUser>
+                                            My Profile
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="/dashboard/myBookings">
+                                            <FaBook></FaBook>
+                                            My Bookings
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="/dashboard/myWishList">
+                                            <FaList></FaList>
+                                            My Wishlist: ({wishListItem.length})
+                                        </NavLink>
+                                    </li>
+                                </>
 
 
 
