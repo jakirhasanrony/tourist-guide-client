@@ -1,31 +1,71 @@
-import { FaBook, FaHome, FaList, FaUser } from "react-icons/fa";
+import { FaAd, FaBook, FaHome, FaList, FaTable, FaUser, FaUsers } from "react-icons/fa";
 import { NavLink, Outlet } from "react-router-dom";
 import useWishList from "../Hooks/useWishList";
+import useAdmin from "../Hooks/useAdmin";
 
 const Dashboard = () => {
     const [wishListItem] = useWishList();
+    const [isAdmin] = useAdmin();
     return (
         <div className="flex">
             <div className="w-64 min-h-screen bg-blue-300">
                 <ul className="menu">
-                    <li>
-                        <NavLink to="/dashboard/myProfile">
-                            <FaUser></FaUser>
-                            My Profile
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/dashboard/myBookings">
-                            <FaBook></FaBook>
-                            My Bookings
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/dashboard/myWishList">
-                            <FaList></FaList>
-                            My Wishlist: ({wishListItem.length})
-                        </NavLink>
-                    </li>
+
+                    {
+                        isAdmin ? <>
+                            <li>
+                                <NavLink to="/dashboard/adminProfile">
+                                    <FaUser></FaUser>
+                                    Admin Profile
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/dashboard/addPackages">
+                                    <FaAd></FaAd>
+                                    Add Package
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/dashboard/manageUsers">
+                                    <FaUsers></FaUsers>
+                                    Manage Users
+                                </NavLink>
+                            </li>
+
+
+
+                        </>
+                            :
+                            <>
+
+                                <li>
+                                    <NavLink to="/dashboard/myProfile">
+                                        <FaUser></FaUser>
+                                        My Profile
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/dashboard/myBookings">
+                                        <FaBook></FaBook>
+                                        My Bookings
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/dashboard/myWishList">
+                                        <FaList></FaList>
+                                        My Wishlist: ({wishListItem.length})
+                                    </NavLink>
+                                </li>
+                            </>
+
+
+
+                    }
+
+
+
+
+                    {/* shared navLinks */}
                     <div className="divider"></div>
                     <li>
                         <NavLink to="/">
@@ -35,7 +75,7 @@ const Dashboard = () => {
                     </li>
                     <li>
                         <NavLink to="/allPackage">
-                            <FaHome></FaHome>
+                            <FaTable></FaTable>
                             Tour Packages
                         </NavLink>
                     </li>

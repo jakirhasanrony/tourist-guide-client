@@ -16,6 +16,7 @@ import CulinaryTours from "../Pages/Home/TourTypeSection/CulinaryTours/CulinaryT
 import SightseeingTour from "../Pages/Home/TourTypeSection/SightseeingTour/SightseeingTour";
 import Dashboard from "../Layout/Dashboard";
 import MyWishList from "../Pages/Dashboard/MyWishList/MyWishList";
+import AllUsers from "../Pages/AllUsers/AllUsers";
 
 export const router = createBrowserRouter([
     {
@@ -77,7 +78,14 @@ export const router = createBrowserRouter([
             {
                 path: 'myWishList',
                 element: <MyWishList></MyWishList>
-            }
+            },
+
+
+            // admin routes
+            {
+                path: 'manageUsers',
+                element: <AllUsers></AllUsers>
+            },
         ]
     }
 ]);
