@@ -2,7 +2,7 @@
 const Footer = () => {
     return (
         <div>
-            <div className="hero min-h-[50vh]" style={{ backgroundImage: 'url(https://i.ibb.co/Fx2brF9/view-felt-fabric-geometric-shapes.jpg)' }}>
+            <div className="hero min-h-[50vh]" style={{ backgroundImage: 'url(https://i.ibb.co/rdZbYm5/cropped-view-felt-fabric-geometric-shapes-1.jpg)' }}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div>

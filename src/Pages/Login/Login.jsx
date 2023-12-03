@@ -3,6 +3,7 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { AuthContext } from "../../Providers/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import SocialLogin from "../Shared/SocialLogin/SocialLogin";
 
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -90,6 +91,9 @@ const Login = () => {
                                             </div>
                                         </form>
                                         <p className="text-center text-gray-500 py-5  ">Do not have an account? Please <Link className="font-bold text-blue-500 " to="/signup">Register</Link></p>
+                                        <div className="flex justify-center items-center">
+                                            <SocialLogin></SocialLogin>
+                                        </div>
                                     </div>
 
                                 </div>

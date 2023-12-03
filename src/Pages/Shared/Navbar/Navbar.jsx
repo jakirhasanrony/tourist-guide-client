@@ -23,7 +23,7 @@ const Navbar = () => {
         <li><Link className=" font-bold text-lg" to="/">About Us</Link></li>
         <li><Link className=" font-bold text-lg" to="/">Contact Us</Link></li>
         <li>
-            <Link to="/">
+            <Link to="/dashboard/mywishlist">
                 <button className="btn text-white  bg-blue-400">
                     WishList
                     <div className="badge badge-secondary">+{wishListItem.length}</div>
@@ -39,7 +39,7 @@ const Navbar = () => {
                     <summary className=" ">
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                             <div className="w-14 rounded-full">
-                                <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                <img alt="Tailwind CSS Navbar component" src={user?.photoURL} />
                             </div>
                         </div>
                     </summary>
@@ -47,7 +47,7 @@ const Navbar = () => {
                         <div className="pr-12 flex justify-start">
                             <button onClick={handleLogOut} className="btn btn-sm btn-ghost -mr[100px] ">LogOut</button>
                         </div>
-                        <li><Link to="/">Dashboard</Link></li>
+                        <li><Link to="dashboard">Dashboard</Link></li>
 
                         <div className="text-sm ">
                             <p className="text-start">User Details:</p>

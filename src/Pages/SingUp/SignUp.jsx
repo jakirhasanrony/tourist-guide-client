@@ -4,8 +4,11 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Swal from "sweetalert2";
+import useAxiosPublic from "../../Hooks/useAxiosPublic";
+import SocialLogin from "../Shared/SocialLogin/SocialLogin";
 
 const SignUp = () => {
+    const axiosPublic = useAxiosPublic();
     const {
         register,
         handleSubmit,
@@ -20,36 +23,46 @@ const SignUp = () => {
 
 
     const onSubmit = data => {
-        console.log(data);
         createUser(data.email, data.password)
             .then(result => {
                 const loggedUser = result.user;
                 console.log(loggedUser);
                 updateUserProfile(data.name, data.photoURL)
                     .then(() => {
-                        console.log('user profile updated')
-                        reset();
-                        Swal.fire({
-                            title: "User created successfully",
-                            showClass: {
-                                popup: `
-                                animate__animated
-                                animate__fadeInUp
-                                animate__faster
-                              `
-                            },
-                            hideClass: {
-                                popup: `
-                                animate__animated
-                                animate__fadeOutDown
-                                animate__faster
-                              `
-                            }
-                        });
-                        logOut()
-                            .then(() => {
-                                navigate("/login");
+                        // console.log('user profile updated')
+                        const userInfo = {
+                            name: data.name,
+                            email: data.email,
+                            imageUrl: data.photoURL,
+                        }
+                        axiosPublic.post('/users', userInfo)
+                            .then(res => {
+                                if (res.data.insertedId) {
+                                    reset();
+                                    Swal.fire({
+                                        title: "User created successfully",
+                                        showClass: {
+                                            popup: `
+                                        animate__animated
+                                        animate__fadeInUp
+                                        animate__faster
+                                      `
+                                        },
+                                        hideClass: {
+                                            popup: `
+                                        animate__animated
+                                        animate__fadeOutDown
+                                        animate__faster
+                                      `
+                                        }
+                                    });
+                                    logOut()
+                                        .then(() => {
+                                            navigate("/login");
+                                        })
+                                }
                             })
+
                     })
                     .catch(error => console.log(error))
             })
@@ -92,7 +105,7 @@ const SignUp = () => {
                                                 <label className="label">
                                                     <span className="label-text">Image Url</span>
                                                 </label>
-                                                <input {...register("imageUrl", { required: true })} type="text" name="imageUrl" placeholder="provide your image url here" className="input input-bordered" />
+                                                <input {...register("photoURL", { required: true })} type="text" name="photoURL" placeholder="provide your image url here" className="input input-bordered" />
                                                 {errors.imageUrl && <span className="font-bold text-red-600">Image Url is required</span>}
                                             </div>
                                             <div className="form-control ">
@@ -140,6 +153,9 @@ const SignUp = () => {
                                             </div>
                                         </form>
                                         <p className="text-center text-gray-500 py-5  ">Already have an account? Please <Link className="font-bold text-blue-500 " to="/login">Login</Link></p>
+                                        <div className="flex justify-center items-center">
+                                            <SocialLogin></SocialLogin>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -151,8 +167,12 @@ const SignUp = () => {
 
                     </div>
 
+
                 </div>
+
+
             </div>
+
 
         </div>
     );

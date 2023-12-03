@@ -14,6 +14,8 @@ import AdventureTour from "../Pages/Home/TourTypeSection/AdventureTour/Adventure
 import WildLifeTour from "../Pages/Home/TourTypeSection/WildLifeTour/WildLifeTour";
 import CulinaryTours from "../Pages/Home/TourTypeSection/CulinaryTours/CulinaryTours";
 import SightseeingTour from "../Pages/Home/TourTypeSection/SightseeingTour/SightseeingTour";
+import Dashboard from "../Layout/Dashboard";
+import MyWishList from "../Pages/Dashboard/MyWishList/MyWishList";
 
 export const router = createBrowserRouter([
     {
@@ -68,4 +70,14 @@ export const router = createBrowserRouter([
             },
         ]
     },
+    {
+        path: 'dashboard',
+        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
+        children: [
+            {
+                path: 'myWishList',
+                element: <MyWishList></MyWishList>
+            }
+        ]
+    }
 ]);

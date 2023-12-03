@@ -17,7 +17,7 @@ const PackageDetails = () => {
                                     Package Details: {' '}
                                     <span style={{ color: 'red', fontWeight: 'bold' }}>
                                         <Typewriter
-                                            words={['Meet Our Proud Guide', 'Our Guide, Our Pride']}
+                                            words={['Best Best Best', 'Choose Our Guide, Choose Our Best']}
                                             loop={20}
                                             cursor
                                             cursorStyle='_'
