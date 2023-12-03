@@ -9,6 +9,11 @@ import SignUp from "../Pages/SingUp/SignUp";
 import PrivateRoute from "./PrivateRoute";
 import PackageDetails from "../Pages/Home/OurPackages/PackageDetails";
 import AllPackage from "../Pages/Home/OurPackages/AllPackage/AllPackage";
+import CulturalTour from "../Pages/Home/TourTypeSection/CulturalTour/CulturalTour";
+import AdventureTour from "../Pages/Home/TourTypeSection/AdventureTour/AdventureTour";
+import WildLifeTour from "../Pages/Home/TourTypeSection/WildLifeTour/WildLifeTour";
+import CulinaryTours from "../Pages/Home/TourTypeSection/CulinaryTours/CulinaryTours";
+import SightseeingTour from "../Pages/Home/TourTypeSection/SightseeingTour/SightseeingTour";
 
 export const router = createBrowserRouter([
     {
@@ -40,6 +45,26 @@ export const router = createBrowserRouter([
             {
                 path: 'signup',
                 element: <SignUp></SignUp>
+            },
+            {
+                path: 'culturaltour',
+                element: <CulturalTour></CulturalTour>
+            },
+            {
+                path: 'adventureTour',
+                element: <AdventureTour></AdventureTour>
+            },
+            {
+                path: 'wildlifetour',
+                element: <WildLifeTour></WildLifeTour>
+            },
+            {
+                path: 'culinarytour',
+                element: <CulinaryTours></CulinaryTours>
+            },
+            {
+                path: 'sightseeingtour',
+                element: <SightseeingTour></SightseeingTour>
             },
         ]
     },

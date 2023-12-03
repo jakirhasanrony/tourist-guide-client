@@ -1,4 +1,5 @@
 import SliderSection from "../SliderSection/SliderSection";
+import TourTypeSection from "../TourTypeSection/TourTypeSection";
 import TourismTravelSection from "../TourismTravelSection/TourismTravelSection";
 
 const Home = () => {
@@ -6,7 +7,8 @@ const Home = () => {
         <div>
             <SliderSection></SliderSection>
             <TourismTravelSection></TourismTravelSection>
-            
+            <TourTypeSection></TourTypeSection>
+
         </div>
     );
 };

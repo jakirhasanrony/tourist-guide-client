@@ -1,9 +1,11 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../Providers/AuthProvider";
+import useWishList from "../../../Hooks/useWishList";
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
+    const [wishListItem] = useWishList();
 
     const handleLogOut = () => {
         logOut()
@@ -24,7 +26,7 @@ const Navbar = () => {
             <Link to="/">
                 <button className="btn text-white  bg-blue-400">
                     WishList
-                    <div className="badge badge-secondary">+0</div>
+                    <div className="badge badge-secondary">+{wishListItem.length}</div>
                 </button>
             </Link>
         </li>

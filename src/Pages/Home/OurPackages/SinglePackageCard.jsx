@@ -4,19 +4,22 @@ import { FaRegHeart } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
 import Swal from "sweetalert2";
-import axios from "axios";
+import useAxiosSecure from "../../../Hooks/useAxiosSecure";
+import useWishList from "../../../Hooks/useWishList";
+
 
 const SinglePackageCard = ({ singlePackage }) => {
     const { user } = useAuth();
     const navigate = useNavigate();
     const location = useLocation();
+    const axiosSecure = useAxiosSecure();
+    const [, refetch] = useWishList();
 
 
     const { _id, trip_title, image, tour_type, price } = singlePackage;
-    const handleAddToWishList = wishPackage => {
+    const handleAddToWishList = () => {
         if (user && user.email) {
-            // sent wishlist item to database
-            console.log(user.email, wishPackage);
+            // console.log(user.email, wishPackage);
             const wishListItem = {
                 wishId: _id,
                 email: user.email,
@@ -26,9 +29,9 @@ const SinglePackageCard = ({ singlePackage }) => {
                 price,
 
             }
-            axios.post('http://localhost:5000/wishlist', wishListItem)
+            axiosSecure.post('/wishlist', wishListItem)
                 .then(res => {
-                    console.log(res.data)
+                    // console.log(res.data)
                     if (res.data.insertedId) {
                         Swal.fire({
                             position: "center",
@@ -37,6 +40,7 @@ const SinglePackageCard = ({ singlePackage }) => {
                             showConfirmButton: false,
                             timer: 1500
                         });
+                        refetch();
                     }
                 })
         }
@@ -68,8 +72,7 @@ const SinglePackageCard = ({ singlePackage }) => {
                     <p className="font-bold text-gray-400">Tour Type: {tour_type}</p>
                     <p className="font-bold text-gray-400">Tour Price: {price}
                     </p>
-
-                    <FaRegHeart onClick={() => handleAddToWishList(singlePackage)} className="text-4xl"></FaRegHeart>
+                    <FaRegHeart onClick={handleAddToWishList} className="text-4xl"></FaRegHeart>
 
                     <Link to={`/tourPackage/${_id}`}>
                         <div className="card-actions">
