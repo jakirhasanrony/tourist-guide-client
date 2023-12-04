@@ -17,6 +17,9 @@ import SightseeingTour from "../Pages/Home/TourTypeSection/SightseeingTour/Sight
 import Dashboard from "../Layout/Dashboard";
 import MyWishList from "../Pages/Dashboard/MyWishList/MyWishList";
 import AllUsers from "../Pages/AllUsers/AllUsers";
+import AdminProfile from "../Pages/Dashboard/AdminProfile/AdminProfile";
+import AddPackages from "../Pages/Dashboard/AddPackages/AddPackages";
+import AdminRoute from './AdminRoute';
 
 export const router = createBrowserRouter([
     {
@@ -84,7 +87,15 @@ export const router = createBrowserRouter([
             // admin routes
             {
                 path: 'manageUsers',
-                element: <AllUsers></AllUsers>
+                element: <AdminRoute><AllUsers></AllUsers></AdminRoute>
+            },
+            {
+                path: 'adminProfile',
+                element: <AdminRoute><AdminProfile></AdminProfile></AdminRoute>
+            },
+            {
+                path: 'addPackages',
+                element: <AdminRoute><AddPackages></AddPackages></AdminRoute>
             },
         ]
     }

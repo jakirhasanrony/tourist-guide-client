@@ -50,7 +50,7 @@ const AllUsers = () => {
     }
 
     return (
-        <div>
+        <div >
             <div className="p-12">
                 <h2 className="text-4xl text-center font-bold my-6">Manage Users</h2>
                 <h2 className="text-xl text-center font-bold my-6">Total Users: {users.length}</h2>

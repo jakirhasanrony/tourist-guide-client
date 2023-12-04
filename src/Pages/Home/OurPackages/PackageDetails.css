@@ -1,0 +1,17 @@
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust the width as needed */
+    gap: 2px; /* Adjust the gap between images */
+  }
+  
+  .image {
+    overflow: hidden;
+    border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
