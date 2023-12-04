@@ -20,6 +20,12 @@ import AllUsers from "../Pages/AllUsers/AllUsers";
 import AdminProfile from "../Pages/Dashboard/AdminProfile/AdminProfile";
 import AddPackages from "../Pages/Dashboard/AddPackages/AddPackages";
 import AdminRoute from './AdminRoute';
+import TouristProfile from "../Pages/Dashboard/TouristProfile/TouristProfile";
+import TouristBookings from "../Pages/Dashboard/TouristBookings/TouristBookings";
+import StoryMoreDetails from "../Pages/Home/StorySection/StoryMoreDetails";
+import AllStory from "../Pages/Home/StorySection/AllStory";
+import ProfileOfTourGuide from "../Pages/Dashboard/ProfileOfTourGuide/ProfileOfTourGuide";
+import TourGuideAssignTour from "../Pages/Dashboard/TourGuideAssignTour/TourGuideAssignTour";
 
 export const router = createBrowserRouter([
     {
@@ -36,9 +42,18 @@ export const router = createBrowserRouter([
                 loader: ({ params }) => fetch(`http://localhost:5000/guide/${params.id}`)
             },
             {
+                path: '/stories/:id',
+                element: <PrivateRoute><StoryMoreDetails></StoryMoreDetails></PrivateRoute>,
+                loader: ({ params }) => fetch(`http://localhost:5000/stories/${params.id}`)
+            },
+            {
                 path: '/tourPackage/:id',
                 element: <PrivateRoute><PackageDetails></PackageDetails></PrivateRoute>,
                 loader: ({ params }) => fetch(`http://localhost:5000/tourPackage/${params.id}`)
+            },
+            {
+                path: 'allStory',
+                element: <AllStory></AllStory>
             },
             {
                 path: 'allPackage',
@@ -82,6 +97,23 @@ export const router = createBrowserRouter([
                 path: 'myWishList',
                 element: <MyWishList></MyWishList>
             },
+            {
+                path: 'myProfile',
+                element: <TouristProfile></TouristProfile>
+            },
+            {
+                path: 'myBookings',
+                element: <TouristBookings></TouristBookings>
+            },
+            {
+                path: 'tourGuideProfile',
+                element: <ProfileOfTourGuide></ProfileOfTourGuide>
+            },
+            {
+                path: 'assignTours',
+                element: <TourGuideAssignTour></TourGuideAssignTour>
+            },
+
 
 
             // admin routes

@@ -37,13 +37,13 @@ const Dashboard = () => {
                         </> :
                             isTourGuide ? <>
                                 <li>
-                                    <NavLink to="/dashboard/adminProfile">
+                                    <NavLink to="/dashboard/tourGuideProfile">
                                         <FaUser></FaUser>
                                         Tour Guide Profile
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/dashboard/addPackages">
+                                    <NavLink to="/dashboard/assignTours">
                                         <FaAd></FaAd>
                                         My Assigned Tours
 
