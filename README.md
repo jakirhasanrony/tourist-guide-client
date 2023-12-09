@@ -1,7 +1,7 @@
 ## Website Live Link: https://final-effort-c524d.web.app/
 #### admin email:  effort22@gmail.com
 ### admin password: 123456Aa1@
-
+# Technology: HTML, CSS, Tailwind, DaisyUI, React, Firebase, MongoDB
 # Website Features
 
 ## Tourist User Features:
